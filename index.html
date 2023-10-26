@@ -2,20 +2,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://unpkg.com/feedybug-script@1.0.7/index.css"
-    />
     <title>feedybug test</title>
   </head>
   <body>
-    <script src="https://unpkg.com/feedybug-script@1.0.7/index.js">
+    <script src="https://unpkg.com/feedybug-script/index.js">
     </script>
-    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <script>
       // you can choose 'right' or 'left' to button position
       modal({
+        api_url: 'https://api.feedybug.staging.acelerabit.com',
         applicationToken: 'b6c1a597-b3f8-4b75-9f2d-09e55817fab9',
         position: 'right'
       }, document, window);
